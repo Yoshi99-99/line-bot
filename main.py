@@ -10,7 +10,7 @@ line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 
 def main():
     USER_ID = info['USER_ID']
-    messages = TextSendMessage(text = 'おはよ！\n今日も一日頑張ってね！\n大好き！！\n美波より♡')
+    messages = TextSendMessage(text = test_jp.txt)
     line_bot_api.push_message(USER_ID, messages = messages)
 
 if __name__ == '__main__' :
